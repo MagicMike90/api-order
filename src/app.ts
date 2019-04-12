@@ -25,13 +25,17 @@ class App {
     this.mongoSetup();
   }
 
-  private mongoSetup(): void {
-    mongoose
-      .connect(
+  private async mongoSetup(): Promise<void> {
+    try {
+      await mongoose.connect(
         this.mongoUrl,
         { useNewUrlParser: true }
-      )
-      .then(res => console.log(`connected to ${this.mongoUrl}`));
+      );
+
+      console.log(`connected to ${this.mongoUrl}`);
+    } catch (err) {
+      console.log(`cannot connect to mongo`);
+    }
   }
 }
 
