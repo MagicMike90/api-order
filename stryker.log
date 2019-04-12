@@ -90,3 +90,1498 @@
 20:57:12 (68242) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
 20:57:12 (68240) DEBUG ChildProcessProxy Disposing of worker process 68242
 20:57:12 (68240) DEBUG ChildProcessProxy Kill 68242
+21:51:10 (69634) INFO ConfigReader Using stryker.conf.js in the current working directory.
+21:51:10 (69634) DEBUG BroadcastReporter Broadcasting to reporters ["html","progress","dashboard"]
+21:51:10 (69634) DEBUG ConfigReader Loading config stryker.conf.js
+21:51:10 (69634) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:10 (69634) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:10 (69634) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:10 (69634) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:10 (69634) INFO MochaOptionsLoader Loading mochaOpts from "/Users/cluo/Development/api-order/test/mocha.opts"
+21:51:10 (69634) DEBUG MochaOptionsLoader Ignoring option "--full-trace" as it is not supported.
+21:51:10 (69634) DEBUG MochaOptionsLoader Ignoring option "--bail" as it is not supported.
+21:51:10 (69634) DEBUG MochaOptionsLoader Ignoring option "test/**/*.spec.ts" as it is not supported.
+21:51:10 (69634) INFO TypescriptConfigEditor Loading tsconfig file /Users/cluo/Development/api-order/tsconfig.json
+21:51:10 (69634) INFO InputFileResolver Found 12 of 27 file(s) to be mutated.
+21:51:10 (69634) DEBUG InputFileResolver All input files: [
+  "/Users/cluo/Development/api-order/.gitignore",
+  "/Users/cluo/Development/api-order/.prettierrc",
+  "/Users/cluo/Development/api-order/README.md",
+  "/Users/cluo/Development/api-order/nodemon.json",
+  "/Users/cluo/Development/api-order/package.json",
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/stryker.conf.js",
+  "/Users/cluo/Development/api-order/stryker.log",
+  "/Users/cluo/Development/api-order/test/mocha.opts",
+  "/Users/cluo/Development/api-order/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/user.spec.ts",
+  "/Users/cluo/Development/api-order/tsconfig.json",
+  "/Users/cluo/Development/api-order/tslint.json",
+  "/Users/cluo/Development/api-order/yarn.lock"
+]
+21:51:10 (69634) DEBUG InputFileResolver Files to mutate: [
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts"
+]
+21:51:10 (69634) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+21:51:10 (69634) INFO InitialTestExecutor Starting initial test run. This may take a while.
+21:51:10 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260
+21:51:10 (69634) DEBUG Sandbox Creating test runner 0
+21:51:10 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69636
+21:51:10 (69636) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260
+21:51:10 (69636) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:10 (69636) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:10 (69636) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:10 (69636) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:11 (69636) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8236260/test/routes/user.spec.ts"
+]
+21:51:11 (69634) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+21:51:12 (69636) DEBUG MochaTestRunner Starting Mocha test run
+21:51:12 (69636) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:12 (69634) DEBUG ChildProcessProxy Disposing of worker process 69636
+21:51:12 (69634) DEBUG ChildProcessProxy Kill 69636
+21:51:12 (69634) INFO InitialTestExecutor Initial test run succeeded. Ran 18 tests in 2 seconds (net 53 ms, overhead 1656 ms).
+21:51:12 (69634) INFO MutatorFacade 147 Mutant(s) generated
+21:51:12 (69634) INFO SandboxPool Creating 12 test runners (based on CPU count)
+21:51:12 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175
+21:51:12 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722
+21:51:12 (69634) DEBUG Sandbox Creating test runner 0
+21:51:12 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69638
+21:51:12 (69634) DEBUG Sandbox Creating test runner 1
+21:51:12 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69639
+21:51:13 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848
+21:51:12 (69638) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175
+21:51:12 (69638) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:12 (69638) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:13 (69638) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:13 (69638) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:13 (69638) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/user.spec.ts"
+]
+21:51:13 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971
+21:51:12 (69639) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722
+21:51:12 (69639) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:12 (69639) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:13 (69639) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:13 (69639) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:13 (69639) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/user.spec.ts"
+]
+21:51:13 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:13 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:13 (69634) DEBUG Sandbox Creating test runner 2
+21:51:13 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69640
+21:51:13 (69634) DEBUG Sandbox Creating test runner 3
+21:51:13 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69641
+21:51:13 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097
+21:51:13 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590
+21:51:13 (69640) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848
+21:51:13 (69640) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:13 (69640) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:13 (69640) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:13 (69640) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:13 (69640) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/test/routes/user.spec.ts"
+]
+21:51:13 (69641) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971
+21:51:13 (69641) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:13 (69641) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:13 (69641) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:13 (69641) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:13 (69641) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/user.spec.ts"
+]
+21:51:13 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:13 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:13 (69634) DEBUG Sandbox Creating test runner 4
+21:51:13 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69642
+21:51:13 (69634) DEBUG Sandbox Creating test runner 5
+21:51:13 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69643
+21:51:14 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129
+21:51:14 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox223534
+21:51:14 (69643) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590
+21:51:14 (69643) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:14 (69643) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:14 (69643) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:14 (69643) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:14 (69643) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5435590/test/routes/user.spec.ts"
+]
+21:51:14 (69642) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097
+21:51:14 (69642) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:14 (69642) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:14 (69642) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:14 (69642) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:14 (69642) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097/test/routes/user.spec.ts"
+]
+21:51:14 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:14 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:14 (69634) DEBUG Sandbox Creating test runner 6
+21:51:14 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69644
+21:51:14 (69634) DEBUG Sandbox Creating test runner 7
+21:51:14 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69645
+21:51:15 (69634) DEBUG Sandbox A runtime error occurred: TypeError: Cannot read property 'use' of undefined
+TypeError: Cannot read property 'use' of undefined
+    at new App (/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/src/app.ts:17:14)
+    at Object.<anonymous> (/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/src/app.ts:25:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/app.ts:16:4
+21:51:15 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:15 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763
+21:51:14 (69644) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129
+21:51:14 (69644) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:14 (69644) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:15 (69644) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:15 (69644) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:15 (69644) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/user.spec.ts"
+]
+21:51:15 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:15 (69634) DEBUG Sandbox Creating test runner 8
+21:51:15 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69646
+21:51:14 (69645) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox223534
+21:51:14 (69645) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:14 (69645) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:15 (69645) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:15 (69645) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:15 (69645) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/user.spec.ts"
+]
+21:51:15 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567
+21:51:15 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:15 (69634) DEBUG Sandbox Creating test runner 9
+21:51:15 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69647
+21:51:15 (69638) DEBUG MochaTestRunner Starting Mocha test run
+21:51:15 (69638) TRACE MochaTestRunner Test failed: baseRoute should respond with HTTP 200 status. Error: Cannot read property 'address' of undefined
+21:51:15 (69638) DEBUG MochaTestRunner Mocha test run completed: 0/1 passed
+21:51:15 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:15 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/order.ts(6,29): error TS2322: Type 'string' is not assignable to type 'Order'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/order.ts(6,29): error TS2322: Type 'string' is not assignable to type 'Order'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ArrayLiteral: (['Stryker was here']) file:///Users/cluo/Development/api-order/src/controllers/order.ts:6:27
+21:51:15 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:16 (69634) DEBUG Sandbox A runtime error occurred: TypeError: Cannot read property 'use' of undefined
+TypeError: Cannot read property 'use' of undefined
+    at new App (/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/src/app.ts:17:14)
+    at Object.<anonymous> (/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/src/app.ts:25:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/app.ts:16:4
+21:51:16 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:16 (69638) DEBUG MochaTestRunner Starting Mocha test run
+21:51:16 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549
+21:51:15 (69646) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763
+21:51:15 (69646) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:15 (69646) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:16 (69646) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:16 (69646) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:16 (69646) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:16 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:16 (69646) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/user.spec.ts"
+]
+21:51:16 (69634) DEBUG Sandbox Creating test runner 10
+21:51:16 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69648
+21:51:16 (69634) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724
+21:51:15 (69647) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567
+21:51:15 (69647) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:15 (69647) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:16 (69647) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:16 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:16 (69647) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:16 (69647) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:16 (69647) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/user.spec.ts"
+]
+21:51:16 (69634) DEBUG Sandbox Creating test runner 11
+21:51:16 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69649
+21:51:16 (69638) TRACE MochaTestRunner Test failed: orderRoute should return the order created on the step before. Error: expected 404 to equal 200
+21:51:16 (69638) DEBUG MochaTestRunner Mocha test run completed: 4/5 passed
+21:51:16 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:17 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:17 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:17 (69639) TRACE MochaTestRunner Test failed: orderRoute should return the order created on the step before. Error: expected 404 to equal 200
+21:51:17 (69639) DEBUG MochaTestRunner Mocha test run completed: 4/5 passed
+21:51:17 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:17 (69641) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:17 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:17 (69638) DEBUG MochaTestRunner Starting Mocha test run
+21:51:18 (69638) TRACE MochaTestRunner Test failed: orderRoute should return all orders so far. Error: expected 0 to equal 1
+21:51:18 (69638) DEBUG MochaTestRunner Mocha test run completed: 5/6 passed
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:17 (69649) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724
+21:51:17 (69649) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:17 (69649) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:18 (69649) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:18 (69649) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:18 (69649) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/user.spec.ts"
+]
+21:51:18 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:18 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:18 (69639) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:18 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:18 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:18 (69641) TRACE MochaTestRunner Test failed: orderRoute should return all orders so far. Error: expected 0 to equal 1
+21:51:18 (69641) DEBUG MochaTestRunner Mocha test run completed: 5/6 passed
+21:51:18 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:19 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/order.ts(31,9): error TS2740: Type '{}' is missing the following properties from type 'Order': id, userId, quantity, shipDate, and 2 more.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/order.ts(31,9): error TS2740: Type '{}' is missing the following properties from type 'Order': id, userId, quantity, shipDate, and 2 more.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ObjectLiteral: ({}) file:///Users/cluo/Development/api-order/src/controllers/order.ts:31:23
+21:51:19 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:19 (69638) DEBUG MochaTestRunner Starting Mocha test run
+21:51:19 (69638) TRACE MochaTestRunner Test failed: orderRoute should not return orders because offset is higher than the size of the orders array. Error: expected 1 to equal 0
+21:51:19 (69638) DEBUG MochaTestRunner Mocha test run completed: 6/7 passed
+21:51:19 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:19 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:19 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:19 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:19 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:19 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:19 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:20 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:20 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:20 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:20 (69638) DEBUG MochaTestRunner Starting Mocha test run
+21:51:20 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:20 (69639) TRACE MochaTestRunner Test failed: orderRoute should create a new order and retrieve it back. Error: expected true to equal false
+21:51:20 (69639) DEBUG MochaTestRunner Mocha test run completed: 3/4 passed
+21:51:20 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:20 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:20 (69641) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:20 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:21 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69642) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:21 (69642) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:21 (69643) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:21 (69643) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:21 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:21 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:21 (69644) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69645) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69645) TRACE MochaTestRunner Test failed: orderRoute should return the order created on the step before. Error: expected 404 to equal 200
+21:51:21 (69645) DEBUG MochaTestRunner Mocha test run completed: 4/5 passed
+21:51:21 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:21 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:21 (69639) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:21 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:22 (69640) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:22 (69640) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:22 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:22 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:22 (69641) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:22 (69641) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:22 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:22 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:22 (69634) DEBUG ChildProcessProxy Disposing of worker process 69644
+21:51:22 (69634) DEBUG ChildProcessProxy Kill 69644
+21:51:22 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69651
+21:51:22 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:22 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:22 (69643) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:22 (69643) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:22 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:22 (69642) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:22 (69642) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:22 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:23 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69639) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:23 (69639) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:23 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:23 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69640) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:23 (69640) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:23 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:23 (69645) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:23 (69645) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:23 (69645) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:23 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:23 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:23 (69647) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69634) DEBUG ChildProcessProxy Disposing of worker process 69647
+21:51:23 (69634) DEBUG ChildProcessProxy Kill 69647
+21:51:23 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69653
+21:51:23 (69641) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:23 (69641) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:23 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:23 (69646) DEBUG MochaTestRunner Starting Mocha test run
+21:51:23 (69634) DEBUG ChildProcessProxy Disposing of worker process 69646
+21:51:23 (69634) DEBUG ChildProcessProxy Kill 69646
+21:51:23 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69655
+21:51:24 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:24 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:24 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:24 (69642) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:24 (69642) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:24 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:24 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:24 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:24 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:22 (69651) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129
+21:51:22 (69651) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:22 (69651) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:23 (69651) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:24 (69651) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:24 (69651) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:24 (69651) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/user.spec.ts"
+]
+21:51:24 (69639) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:24 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:24 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:24 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:24 (69645) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69640) TRACE MochaTestRunner Test failed: orderRoute should return 404 when it is trying to remove an order because the order does not exist. Error: expected 204 to equal 404
+21:51:25 (69640) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:25 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69641) TRACE MochaTestRunner Test failed: orderRoute should return the inventory for all users. Error: Cannot read property 'length' of undefined
+21:51:25 (69641) DEBUG MochaTestRunner Mocha test run completed: 7/8 passed
+21:51:25 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:25 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:17 (69648) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549
+21:51:17 (69648) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:17 (69648) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:17 (69648) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:18 (69648) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:18 (69648) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/user.spec.ts"
+]
+21:51:25 (69648) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69634) DEBUG ChildProcessProxy Disposing of worker process 69648
+21:51:25 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:25 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:25 (69634) DEBUG ChildProcessProxy Kill 69648
+21:51:25 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69657
+21:51:25 (69649) DEBUG MochaTestRunner Starting Mocha test run
+21:51:25 (69634) DEBUG ChildProcessProxy Disposing of worker process 69649
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:24 (69653) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567
+21:51:24 (69653) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:24 (69653) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:25 (69653) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:25 (69653) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:25 (69653) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9739567/test/routes/user.spec.ts"
+]
+21:51:25 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:24 (69655) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763
+21:51:24 (69655) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:24 (69655) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:25 (69655) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:25 (69655) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:25 (69655) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7597763/test/routes/user.spec.ts"
+]
+21:51:25 (69634) DEBUG ChildProcessProxy Kill 69649
+21:51:25 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69659
+21:51:25 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:25 (69634) DEBUG ChildProcessProxy Disposing of worker process 69638
+21:51:25 (69634) DEBUG ChildProcessProxy Kill 69638
+21:51:26 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69661
+21:51:26 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69639) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:26 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:26 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:26 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:26 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69641) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:26 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:27 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:27 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:27 (69639) DEBUG MochaTestRunner Starting Mocha test run
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:26 (69657) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549
+21:51:26 (69657) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:26 (69657) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:27 (69657) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:27 (69657) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:27 (69657) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/user.spec.ts"
+]
+21:51:27 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:27 (69640) TRACE MochaTestRunner Test failed: userRoute should return the user created on the step before. Error: expected 404 to equal 200
+21:51:27 (69640) DEBUG MochaTestRunner Mocha test run completed: 12/13 passed
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:26 (69659) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724
+21:51:26 (69659) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:26 (69659) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:27 (69659) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:27 (69659) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:27 (69659) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9087724/test/routes/user.spec.ts"
+]
+21:51:27 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:27 (69641) TRACE MochaTestRunner Test failed: userRoute should return the user created on the step before. Error: expected 404 to equal 200
+21:51:27 (69641) DEBUG MochaTestRunner Mocha test run completed: 12/13 passed
+21:51:27 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:28 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:28 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:28 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:28 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:28 (69642) TRACE MochaTestRunner Test failed: userRoute should return the user created on the step before. Error: expected 404 to equal 200
+21:51:28 (69642) DEBUG MochaTestRunner Mocha test run completed: 12/13 passed
+21:51:28 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:28 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(14,9): error TS2740: Type '{}' is missing the following properties from type 'User': id, username, firstName, lastName, and 4 more.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(14,9): error TS2740: Type '{}' is missing the following properties from type 'User': id, username, firstName, lastName, and 4 more.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ObjectLiteral: ({}) file:///Users/cluo/Development/api-order/src/controllers/user.ts:14:21
+21:51:28 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:28 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:28 (69641) DEBUG MochaTestRunner Starting Mocha test run
+21:51:28 (69643) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:28 (69643) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:28 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:29 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:29 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:29 (69642) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:29 (69642) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:29 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:29 (69640) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:29 (69640) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:29 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:29 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:29 (69643) TRACE MochaTestRunner Test failed: userRoute should return 404 because the user does not exist. Error: expected 204 to equal 404
+21:51:29 (69643) DEBUG MochaTestRunner Mocha test run completed: 15/16 passed
+21:51:29 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:30 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:30 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:30 (69634) TRACE ChildProcessProxy TypeError: Cannot set property 'username' of undefined
+    at exports.updateUser (/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/src/controllers/user.ts:38:16)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:275:10)
+
+21:51:30 (69640) TRACE MochaTestRunner Test failed: userRoute should return 404 because the user does not exist. Error: expected 500 to equal 404
+21:51:30 (69640) DEBUG MochaTestRunner Mocha test run completed: 15/16 passed
+21:51:30 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:30 (69642) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:30 (69642) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:30 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:30 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:30 (69634) DEBUG ChildProcessProxy Disposing of worker process 69645
+21:51:30 (69634) DEBUG ChildProcessProxy Kill 69645
+21:51:30 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69664
+21:51:30 (69651) DEBUG MochaTestRunner Starting Mocha test run
+21:51:30 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(4,27): error TS2322: Type 'string' is not assignable to type 'User'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(4,27): error TS2322: Type 'string' is not assignable to type 'User'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ArrayLiteral: (['Stryker was here']) file:///Users/cluo/Development/api-order/src/controllers/user.ts:4:25
+21:51:30 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:31 (69651) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69643) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:31 (69643) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:31 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:31 (69634) TRACE ChildProcessProxy TypeError: Cannot set property 'username' of undefined
+    at exports.updateUser (/Users/cluo/Development/api-order/.stryker-tmp/sandbox5380848/src/controllers/user.ts:38:16)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:275:10)
+
+21:51:31 (69640) TRACE MochaTestRunner Test failed: userRoute should return 404 because the user does not exist. Error: expected 500 to equal 404
+21:51:31 (69640) DEBUG MochaTestRunner Mocha test run completed: 15/16 passed
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69634) TRACE ChildProcessProxy TypeError: Cannot set property 'username' of undefined
+    at exports.updateUser (/Users/cluo/Development/api-order/.stryker-tmp/sandbox1581097/src/controllers/user.ts:36:16)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/cluo/Development/api-order/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/cluo/Development/api-order/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:410:3)
+    at next (/Users/cluo/Development/api-order/node_modules/express/lib/router/index.js:275:10)
+
+21:51:31 (69642) TRACE MochaTestRunner Test failed: userRoute should return 404 because the user does not exist. Error: expected 500 to equal 404
+21:51:31 (69642) DEBUG MochaTestRunner Mocha test run completed: 15/16 passed
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:30 (69664) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox223534
+21:51:30 (69664) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:30 (69664) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:31 (69664) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:31 (69664) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:31 (69664) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/user.spec.ts"
+]
+21:51:31 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(38,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(38,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:38:18
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:31 (69653) TRACE MochaTestRunner Test failed: orderRoute should return the inventory for all users. Error: Cannot read property 'length' of undefined
+21:51:31 (69653) DEBUG MochaTestRunner Mocha test run completed: 7/8 passed
+21:51:31 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(38,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(38,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:38:18
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:32 (69643) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 404 to equal 200
+21:51:32 (69643) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69651) DEBUG MochaTestRunner Starting Mocha test run
+21:51:32 (69651) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 404 to equal 200
+21:51:32 (69651) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(39,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(39,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:39:19
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:32 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:32 (69640) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'John' to equal 'Jhon Updated'
+21:51:32 (69640) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:32 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(39,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(39,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:39:19
+21:51:32 (69634) DEBUG ChildProcessProxy Disposing of worker process 69639
+21:51:32 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:32 (69634) DEBUG ChildProcessProxy Kill 69639
+21:51:33 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69680
+21:51:33 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69655) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 404 to equal 200
+21:51:33 (69655) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69653) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'John' to equal 'Jhon Updated'
+21:51:33 (69653) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69657) DEBUG MochaTestRunner Starting Mocha test run
+21:51:26 (69661) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175
+21:51:26 (69661) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:26 (69661) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:27 (69661) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:27 (69661) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:27 (69661) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/user.spec.ts"
+]
+21:51:33 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69651) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69651) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'Doe' to equal 'Doe Updated'
+21:51:33 (69651) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69642) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'Doe' to equal 'Doe Updated'
+21:51:33 (69642) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69661) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(40,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(40,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:40:18
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69659) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:33 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:34 (69640) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'Doe' to equal 'Doe Updated'
+21:51:34 (69640) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:34 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:34 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:34 (69634) DEBUG ChildProcessProxy Disposing of worker process 69657
+21:51:34 (69634) DEBUG ChildProcessProxy Kill 69657
+21:51:34 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69682
+21:51:34 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:34 (69634) DEBUG ChildProcessProxy Disposing of worker process 69641
+21:51:34 (69634) DEBUG ChildProcessProxy Kill 69641
+21:51:34 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69684
+21:51:34 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(40,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(40,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:40:18
+21:51:34 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(41,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(41,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:41:15
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:33 (69680) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722
+21:51:33 (69680) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:35 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:33 (69680) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:35 (69680) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:35 (69680) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:35 (69680) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox8670722/test/routes/user.spec.ts"
+]
+21:51:35 (69651) DEBUG MochaTestRunner Starting Mocha test run
+21:51:35 (69640) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'password' to equal 'password Updated'
+21:51:35 (69640) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69642) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'jhon@myemail.com' to equal 'jhon@myemail_updated.com'
+21:51:35 (69642) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:35 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(41,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(41,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:41:15
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69653) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'jhon@myemail.com' to equal 'jhon@myemail_updated.com'
+21:51:35 (69653) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69651) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'jhon@myemail.com' to equal 'jhon@myemail_updated.com'
+21:51:35 (69651) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:35 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:36 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:36 (69659) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'password' to equal 'password Updated'
+21:51:36 (69659) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:36 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:36 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(42,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(42,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:42:18
+21:51:36 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:36 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:36 (69655) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 'password' to equal 'password Updated'
+21:51:36 (69655) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:36 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:36 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:37 (69640) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected '5555555' to equal '3333333'
+21:51:37 (69640) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:37 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69682) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549
+21:51:35 (69682) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:35 (69682) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:36 (69682) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:37 (69682) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:37 (69682) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox5637549/test/routes/user.spec.ts"
+]
+21:51:37 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(43,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(43,3): error TS2322: Type 'false' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:43:15
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:37 (69642) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected '5555555' to equal '3333333'
+21:51:37 (69642) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:37 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(43,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(43,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:43:15
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69684) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971
+21:51:35 (69684) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:35 (69684) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:37 (69684) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:37 (69684) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:37 (69684) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/user.spec.ts"
+]
+21:51:37 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:37 (69661) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected '5555555' to equal '3333333'
+21:51:37 (69661) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:37 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:37 (69643) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 1 to equal 12
+21:51:37 (69643) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:37 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:38 (69655) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 1 to equal 12
+21:51:38 (69655) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:38 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:38 (69659) TRACE MochaTestRunner Test failed: userRoute should return the user updated on the step before. Error: expected 1 to equal 12
+21:51:38 (69659) DEBUG MochaTestRunner Mocha test run completed: 14/15 passed
+21:51:38 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(44,3): error TS2322: Type 'false' is not assignable to type 'Number'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(44,3): error TS2322: Type 'false' is not assignable to type 'Number'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (false) file:///Users/cluo/Development/api-order/src/controllers/user.ts:44:20
+21:51:38 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:38 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:38 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:38 (69653) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:38 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:38 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:38 (69651) DEBUG MochaTestRunner Starting Mocha test run
+21:51:38 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69661) TRACE MochaTestRunner Test failed: userRoute should remove an existent user. Error: expected 404 to equal 204
+21:51:39 (69661) DEBUG MochaTestRunner Mocha test run completed: 16/17 passed
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:39 (69643) TRACE MochaTestRunner Test failed: userRoute should remove an existent user. Error: expected 404 to equal 204
+21:51:39 (69643) DEBUG MochaTestRunner Mocha test run completed: 16/17 passed
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:39 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69655) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:39 (69642) TRACE MochaTestRunner Test failed: userRoute should remove an existent user. Error: expected 404 to equal 204
+21:51:39 (69642) DEBUG MochaTestRunner Mocha test run completed: 16/17 passed
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:39 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:39 (69659) TRACE MochaTestRunner Test failed: userRoute should remove an existent user. Error: expected 404 to equal 204
+21:51:39 (69659) DEBUG MochaTestRunner Mocha test run completed: 16/17 passed
+21:51:39 (69640) TRACE MochaTestRunner Test failed: userRoute should return 404 when it is trying to remove an user because the user does not exist. Error: expected 204 to equal 404
+21:51:39 (69640) DEBUG MochaTestRunner Mocha test run completed: 17/18 passed
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:39 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69653) TRACE MochaTestRunner Test failed: userRoute should return 404 when it is trying to remove an user because the user does not exist. Error: expected 204 to equal 404
+21:51:40 (69653) DEBUG MochaTestRunner Mocha test run completed: 17/18 passed
+21:51:40 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69664) DEBUG MochaTestRunner Starting Mocha test run
+21:51:40 (69634) DEBUG ChildProcessProxy Disposing of worker process 69664
+21:51:40 (69634) DEBUG ChildProcessProxy Kill 69664
+21:51:40 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69693
+21:51:40 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:40 (69661) TRACE MochaTestRunner Test failed: userRoute should return 404 when it is trying to remove an user because the user does not exist. Error: expected 204 to equal 404
+21:51:40 (69661) DEBUG MochaTestRunner Mocha test run completed: 17/18 passed
+21:51:40 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:40 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:40 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:40 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:40 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:40 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:41 (69655) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:41 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:41 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:41 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:41 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:41 (69659) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:41 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:41 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:41 (69653) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:41 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:41 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:41 (69661) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:41 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:41 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69655) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:40 (69693) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox223534
+21:51:40 (69693) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:40 (69693) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:41 (69693) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:41 (69693) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:42 (69693) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox223534/test/routes/user.spec.ts"
+]
+21:51:42 (69643) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69642) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(42,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(42,3): error TS2322: Type 'true' is not assignable to type 'String'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:42:18
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69653) TRACE MochaTestRunner Test failed: baseRoute should respond with HTTP 200 status. Error: expected 404 to equal 200
+21:51:42 (69653) DEBUG MochaTestRunner Mocha test run completed: 0/1 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:42 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:42 (69659) TRACE MochaTestRunner Test failed: baseRoute should respond with HTTP 200 status. Error: expected 404 to equal 200
+21:51:42 (69659) DEBUG MochaTestRunner Mocha test run completed: 0/1 passed
+21:51:42 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69655) TRACE MochaTestRunner Test failed: baseRoute should respond with success message. Error: expected undefined to equal 'success'
+21:51:43 (69655) DEBUG MochaTestRunner Mocha test run completed: 1/2 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69643) TRACE MochaTestRunner Test failed: orderRoute should create a new order and retrieve it back. Error: expected 404 to equal 201
+21:51:43 (69643) DEBUG MochaTestRunner Mocha test run completed: 3/4 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69661) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69642) TRACE MochaTestRunner Test failed: orderRoute should return the inventory for all users. Error: expected 404 to equal 200
+21:51:43 (69642) DEBUG MochaTestRunner Mocha test run completed: 7/8 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69634) DEBUG Sandbox A runtime error occurred: TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(44,3): error TS2322: Type 'true' is not assignable to type 'Number'.
+
+TSError: ⨯ Unable to compile TypeScript:
+src/controllers/user.ts(44,3): error TS2322: Type 'true' is not assignable to type 'Number'.
+
+    at createTSError (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:226:12)
+    at getOutput (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:335:40)
+    at Object.compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:368:11)
+    at Module.m._compile (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:414:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/Users/cluo/Development/api-order/node_modules/ts-node/src/index.ts:417:12)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17) during execution of mutant: ConditionalExpression: (true) file:///Users/cluo/Development/api-order/src/controllers/user.ts:44:20
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69653) TRACE MochaTestRunner Test failed: orderRoute should return all orders so far. Error: expected 404 to equal 200
+21:51:43 (69653) DEBUG MochaTestRunner Mocha test run completed: 5/6 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69640) TRACE MochaTestRunner Test failed: orderRoute should return the order created on the step before. Error: expected 404 to equal 200
+21:51:43 (69640) DEBUG MochaTestRunner Mocha test run completed: 4/5 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:43 (69659) TRACE MochaTestRunner Test failed: orderRoute should remove an existing order. Error: expected 404 to equal 204
+21:51:43 (69659) DEBUG MochaTestRunner Mocha test run completed: 8/9 passed
+21:51:43 (69634) DEBUG TimeoutDecorator Starting timeout timer (6735.5 ms) for a test run
+21:51:43 (69655) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69643) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69655) TRACE MochaTestRunner Test failed: userRoute should create a new user and retrieve it back. Error: expected 404 to equal 201
+21:51:44 (69655) DEBUG MochaTestRunner Mocha test run completed: 11/12 passed
+21:51:44 (69642) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:44 (69634) DEBUG ChildProcessProxy Disposing of worker process 69651
+21:51:44 (69634) DEBUG ChildProcessProxy Kill 69651
+21:51:44 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69695
+21:51:44 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:44 (69642) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+21:51:44 (69642) DEBUG MochaTestRunner Mocha test run completed: 13/14 passed
+21:51:44 (69643) TRACE MochaTestRunner Test failed: userRoute should create a new user and retrieve it back. Error: expected 404 to equal 201
+21:51:44 (69643) DEBUG MochaTestRunner Mocha test run completed: 11/12 passed
+21:51:44 (69653) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69680) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69653) TRACE MochaTestRunner Test failed: userRoute should return the user created on the step before. Error: expected 404 to equal 200
+21:51:44 (69653) DEBUG MochaTestRunner Mocha test run completed: 12/13 passed
+21:51:44 (69680) TRACE MochaTestRunner Test failed: orderRoute should create a new order and retrieve it back. Error: expected 404 to equal 201
+21:51:44 (69680) DEBUG MochaTestRunner Mocha test run completed: 3/4 passed
+21:51:44 (69684) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69634) DEBUG ChildProcessProxy Disposing of worker process 69684
+21:51:44 (69634) DEBUG ChildProcessProxy Kill 69684
+21:51:44 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69697
+21:51:44 (69640) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69659) DEBUG MochaTestRunner Starting Mocha test run
+21:51:44 (69640) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:44 (69659) DEBUG MochaTestRunner Mocha test run completed: 18/18 passed
+21:51:45 (69682) DEBUG MochaTestRunner Starting Mocha test run
+21:51:45 (69682) TRACE MochaTestRunner Test failed: userRoute should remove an existent user. Error: expected 404 to equal 204
+21:51:45 (69682) DEBUG MochaTestRunner Mocha test run completed: 16/17 passed
+21:51:44 (69695) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129
+21:51:44 (69695) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:44 (69695) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:45 (69695) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:45 (69695) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:45 (69695) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox2612129/test/routes/user.spec.ts"
+]
+21:51:45 (69697) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971
+21:51:45 (69697) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:45 (69697) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:45 (69697) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:45 (69697) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:45 (69697) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7257971/test/routes/user.spec.ts"
+]
+21:51:45 (69693) DEBUG MochaTestRunner Starting Mocha test run
+21:51:45 (69693) TRACE MochaTestRunner Test failed: baseRoute should respond with success message. Error: expected '' to equal 'success'
+21:51:45 (69693) DEBUG MochaTestRunner Mocha test run completed: 1/2 passed
+21:51:48 (69634) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69661
+21:51:48 (69634) DEBUG ChildProcessProxy Kill 69661
+21:51:48 (69634) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 69706
+21:51:48 (69706) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175
+21:51:48 (69706) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-html-reporter
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+21:51:48 (69706) DEBUG PluginLoader Loading plugins stryker-typescript
+21:51:48 (69706) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+21:51:48 (69706) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+21:51:48 (69706) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox7598175/test/routes/user.spec.ts"
+]
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69640
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69680
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69697
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69655
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69653
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69695
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69682
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69659
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69693
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69706
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69642
+21:51:48 (69634) DEBUG ChildProcessProxy Disposing of worker process 69643
+21:51:48 (69634) DEBUG ChildProcessProxy Kill 69640
+21:51:48 (69634) DEBUG ChildProcessProxy Kill 69680
+21:51:48 (69634) DEBUG ChildProcessProxy Kill 69697
+21:51:48 (69634) DEBUG ChildProcessProxy Kill 69655
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69653
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69682
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69659
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69693
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69695
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69642
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69643
+21:51:49 (69634) DEBUG ChildProcessProxy Kill 69706
+21:51:49 (69634) DEBUG HtmlReporter No base folder configuration found (using configuration: htmlReporter: { baseDir: 'output/folder' }), using default reports/mutation/html
+21:51:49 (69634) INFO DashboardReporter Dashboard report is not sent when not running on a build server
+21:51:49 (69634) DEBUG ScoreResultCalculator No breaking threshold configured. Won't fail the build no matter how low your mutation score is. Set `thresholds.break` to change this behavior.
+21:51:49 (69634) INFO HtmlReporter Your report can be found at: file:///Users/cluo/Development/api-order/reports/mutation/html/index.html
+21:51:49 (69634) DEBUG TempFolder Deleting stryker temp folder /Users/cluo/Development/api-order/.stryker-tmp
+21:51:49 (69634) INFO Stryker Done in 38 seconds.

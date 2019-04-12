@@ -5,14 +5,29 @@ import { OrderStatus } from '../models/orderStatus'
 
 let orders: Array<Order> = []
 
-export let getOrder = (req: Request, res: Response, next: NextFunction) => {
+export const getOrder = (req: Request, res: Response, next: NextFunction) => {
   const id = req.params.id
   const order = orders.find(obj => obj.id === Number(id))
   const httpStatusCode = order ? 200 : 404
   return res.status(httpStatusCode).send(order)
 }
 
-export let addOrder = (req: Request, res: Response, next: NextFunction) => {
+export const getAllOrders = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const limit = req.query.limit || orders.length
+  const offset = req.query.offset || 0
+  return res.status(200).send(
+    _(orders)
+      .drop(offset)
+      .take(limit)
+      .value()
+  )
+}
+
+export const addOrder = (req: Request, res: Response, next: NextFunction) => {
   const order: Order = {
     // generic random value from 1 to 100 only for tests so far
     id: Math.floor(Math.random() * 100) + 1,
@@ -26,7 +41,11 @@ export let addOrder = (req: Request, res: Response, next: NextFunction) => {
   return res.status(201).send(order)
 }
 
-export let removeOrder = (req: Request, res: Response, next: NextFunction) => {
+export const removeOrder = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   const id = Number(req.params.id)
   const orderIndex = orders.findIndex(item => item.id === id)
 
@@ -39,7 +58,17 @@ export let removeOrder = (req: Request, res: Response, next: NextFunction) => {
   return res.status(204).send()
 }
 
-export let getInventory = (req: Request, res: Response, next: NextFunction) => {
-  const grouppedOrders = _.groupBy(orders, 'userId')
+export const getInventory = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const status = req.query.status
+  let inventoryOrders = orders
+  if (status) {
+    inventoryOrders = inventoryOrders.filter(item => item.status === status)
+  }
+
+  const grouppedOrders = _.groupBy(inventoryOrders, 'userId')
   return res.status(200).send(grouppedOrders)
 }
