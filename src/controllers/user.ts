@@ -1,17 +1,18 @@
-import { NextFunction, Request, Response } from 'express'
-import { ApplicationType } from '../models/applicationType'
-import { default as User } from '../models/User'
-import { formatOutput } from '../utils/orderApiUtility'
-const APPLICATION_JSON = 'application/json'
+import { NextFunction, Request, Response } from 'express';
 
-let users: Array<User> = []
+import User from '../models/User';
+import { formatOutput } from '../utils/orderApiUtility';
+
+const APPLICATION_JSON = 'application/json';
+
+let users: Array<User> = [];
 
 export let getUser = (req: Request, res: Response, next: NextFunction) => {
-  const username = req.params.username
-  const user = users.find(obj => obj.username === username)
-  const httpStatusCode = user ? 200 : 404
-  return formatOutput(res, user, httpStatusCode, ApplicationType.JSON)
-}
+  const username = req.params.username;
+  const user = users.find(obj => obj.username === username);
+  const httpStatusCode = user ? 200 : 404;
+  return formatOutput(res, user, httpStatusCode, 'user');
+};
 
 export let addUser = (req: Request, res: Response, next: NextFunction) => {
   const user: User = {
@@ -24,41 +25,41 @@ export let addUser = (req: Request, res: Response, next: NextFunction) => {
     password: req.body.password,
     phone: req.body.phone,
     userStatus: 1,
-  }
-  users.push(user)
-  return formatOutput(res, user, 201, ApplicationType.JSON)
-}
+  };
+  users.push(user);
+  return formatOutput(res, user, 201, 'user');
+};
 
 export let updateUser = (req: Request, res: Response, next: NextFunction) => {
-  const username = req.params.username
-  const userIndex = users.findIndex(item => item.username === username)
+  const username = req.params.username;
+  const userIndex = users.findIndex(item => item.username === username);
 
   if (userIndex === -1) {
-    return res.status(404).send()
+    return res.status(404).send();
   }
 
-  const user = users[userIndex]
-  user.username = req.body.username || user.username
-  user.firstName = req.body.firstName || user.firstName
-  user.lastName = req.body.lastName || user.lastName
-  user.email = req.body.email || user.email
-  user.password = req.body.password || user.password
-  user.phone = req.body.phone || user.phone
-  user.userStatus = req.body.userStatus || user.userStatus
+  const user = users[userIndex];
+  user.username = req.body.username || user.username;
+  user.firstName = req.body.firstName || user.firstName;
+  user.lastName = req.body.lastName || user.lastName;
+  user.email = req.body.email || user.email;
+  user.password = req.body.password || user.password;
+  user.phone = req.body.phone || user.phone;
+  user.userStatus = req.body.userStatus || user.userStatus;
 
-  users[userIndex] = user
-  return formatOutput(res, {}, 204, ApplicationType.JSON)
-}
+  users[userIndex] = user;
+  return formatOutput(res, {}, 204);
+};
 
 export let removeUser = (req: Request, res: Response, next: NextFunction) => {
-  const username = req.params.username
-  const userIndex = users.findIndex(item => item.username === username)
+  const username = req.params.username;
+  const userIndex = users.findIndex(item => item.username === username);
 
   if (userIndex === -1) {
-    return res.status(404).send()
+    return res.status(404).send();
   }
 
-  users = users.filter(item => item.username !== username)
+  users = users.filter(item => item.username !== username);
 
-  return formatOutput(res, {}, 204, ApplicationType.JSON)
-}
+  return formatOutput(res, {}, 204);
+};
