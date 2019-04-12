@@ -28,16 +28,25 @@ export const getAllOrders = (
 ) => {
   const limit = req.query.limit || orders.length;
   const offset = req.query.offset || 0;
-  const filteredOrders = _(orders)
+
+  let filteredOrders = _(orders)
     .drop(offset)
     .take(limit)
     .value();
+
+  filteredOrders = filteredOrders.map(order => {
+    return halson(order)
+      .addLink('self', `/store/orders/${order.id}`)
+      .addLink('user', {
+        href: `/users/${order.userId}`,
+      });
+  });
 
   return formatOutput(res, filteredOrders, 200, 'order');
 };
 
 export const addOrder = (req: Request, res: Response, next: NextFunction) => {
-  const order: Order = {
+  let order: Order = {
     // generic random value from 1 to 100 only for tests so far
     id: Math.floor(Math.random() * 100) + 1,
     userId: req.body.userId,
@@ -46,7 +55,14 @@ export const addOrder = (req: Request, res: Response, next: NextFunction) => {
     status: OrderStatus.Placed,
     complete: false,
   };
+
   orders.push(order);
+  order = halson(order)
+    .addLink('self', `/store/orders/${order.id}`)
+    .addLink('user', {
+      href: `/users/${order.userId}`,
+    });
+
   return formatOutput(res, order, 201, 'order');
 };
 
