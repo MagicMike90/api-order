@@ -1,30 +1,32 @@
-'use strict';
 import 'mocha';
 
 import * as chai from 'chai';
 import chaiHttp = require('chai-http');
 
 import app from '../../src/app';
-import User from '../../src/models/User';
-
+import { UserModel } from '../../src/schemas/User';
 
 chai.use(chaiHttp);
 
 const expect = chai.expect;
 
-const user: User = {
-  // generic random value from 1 to 100 only for tests so far
-  id: Math.floor(Math.random() * 100) + 1,
+const user = {
   username: 'John',
   firstName: 'John',
   lastName: 'Doe',
-  email: 'jhon@myemail.com',
+  email: 'John@myemail.com',
   password: 'password',
   phone: '5555555',
   userStatus: 1,
 };
 
 describe('userRoute', () => {
+  //  This new section checks whether the model is user and drops the collections
+  // if exists in order to do not mess up with the tests:
+  before(async () => {
+    expect(UserModel.modelName).to.be.equal('User');
+    UserModel.collection.drop();
+  });
   it('should respond with HTTP 404 status because there is no user', async () => {
     return chai
       .request(app)
@@ -36,7 +38,7 @@ describe('userRoute', () => {
   it('should create a new user and retrieve it back', async () => {
     return chai
       .request(app)
-      .post('/users/')
+      .post('/users')
       .send(user)
       .then(res => {
         expect(res.status).to.be.equal(201);
@@ -52,11 +54,11 @@ describe('userRoute', () => {
         expect(res.body.username).to.be.equal(user.username);
       });
   });
-  it('should updated the user Jhon', async () => {
-    user.username = 'Jhon Updated';
-    user.firstName = 'Jhon Updated';
+  it('should updated the user John', async () => {
+    user.username = 'John_Updated';
+    user.firstName = 'John Updated';
     user.lastName = 'Doe Updated';
-    user.email = 'jhon@myemail_updated.com';
+    user.email = 'John@myemail_updated.com';
     user.password = 'password Updated';
     user.phone = '3333333';
     user.userStatus = 12;

@@ -33,11 +33,14 @@
   },
   "homepage": "https://github.com/MagicMike90/api-order#readme",
   "dependencies": {
+    "@types/mongodb": "^3.1.23",
+    "@types/mongoose": "^5.3.26",
     "body-parser": "^1.18.3",
     "chai-http": "^4.2.1",
     "express": "^4.16.4",
     "halson": "^3.0.0",
-    "js2xmlparser": "^4.0.0"
+    "js2xmlparser": "^4.0.0",
+    "mongoose": "^5.5.1"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^1.2.0",
