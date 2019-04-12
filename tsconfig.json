@@ -10,7 +10,8 @@
     "resolveJsonModule": true //to import out json database
   },
   "include": [
-    "src/**/*.ts" //which kind of files to compile
+    "src/**/*.ts",
+    "test/routes/index.spec.ts" //which kind of files to compile
   ],
   "exclude": [
     "node_modules" //which files or directories to ignore
