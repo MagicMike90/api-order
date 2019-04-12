@@ -1,0 +1,92 @@
+20:57:10 (68240) INFO ConfigReader Using stryker.conf.js in the current working directory.
+20:57:10 (68240) DEBUG BroadcastReporter Broadcasting to reporters ["html","progress","dashboard"]
+20:57:10 (68240) DEBUG ConfigReader Loading config stryker.conf.js
+20:57:10 (68240) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-html-reporter
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+20:57:10 (68240) DEBUG PluginLoader Loading plugins stryker-typescript
+20:57:10 (68240) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+20:57:10 (68240) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+20:57:10 (68240) INFO MochaOptionsLoader Loading mochaOpts from "/Users/cluo/Development/api-order/test/mocha.opts"
+20:57:10 (68240) DEBUG MochaOptionsLoader Ignoring option "--full-trace" as it is not supported.
+20:57:10 (68240) DEBUG MochaOptionsLoader Ignoring option "--bail" as it is not supported.
+20:57:10 (68240) DEBUG MochaOptionsLoader Ignoring option "test/**/*.spec.ts" as it is not supported.
+20:57:10 (68240) INFO TypescriptConfigEditor Loading tsconfig file /Users/cluo/Development/api-order/tsconfig.json
+20:57:10 (68240) INFO InputFileResolver Found 12 of 27 file(s) to be mutated.
+20:57:10 (68240) DEBUG InputFileResolver All input files: [
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/stryker.log",
+  "/Users/cluo/Development/api-order/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/user.spec.ts",
+  "/Users/cluo/Development/api-order/.gitignore",
+  "/Users/cluo/Development/api-order/.prettierrc",
+  "/Users/cluo/Development/api-order/README.md",
+  "/Users/cluo/Development/api-order/nodemon.json",
+  "/Users/cluo/Development/api-order/package.json",
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/stryker.conf.js",
+  "/Users/cluo/Development/api-order/test/mocha.opts",
+  "/Users/cluo/Development/api-order/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/tsconfig.json",
+  "/Users/cluo/Development/api-order/tslint.json",
+  "/Users/cluo/Development/api-order/yarn.lock"
+]
+20:57:10 (68240) DEBUG InputFileResolver Files to mutate: [
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/server.ts"
+]
+20:57:10 (68240) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+20:57:10 (68240) INFO InitialTestExecutor Starting initial test run. This may take a while.
+20:57:10 (68240) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752
+20:57:10 (68240) DEBUG Sandbox Creating test runner 0
+20:57:10 (68240) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 68242
+20:57:10 (68242) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752
+20:57:10 (68242) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-html-reporter
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+20:57:10 (68242) DEBUG PluginLoader Loading plugins stryker-typescript
+20:57:10 (68242) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+20:57:10 (68242) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+20:57:11 (68242) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752/test/routes/api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752/test/routes/order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752/test/routes/user.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox1032752/test/routes/index.spec.ts"
+]
+20:57:11 (68240) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+20:57:12 (68242) DEBUG MochaTestRunner Starting Mocha test run
+20:57:12 (68242) TRACE MochaTestRunner Test failed: userRoute should updated the user Jhon. Error: expected 404 to equal 204
+20:57:12 (68242) DEBUG MochaTestRunner Mocha test run completed: 9/10 passed
+20:57:12 (68240) DEBUG ChildProcessProxy Disposing of worker process 68242
+20:57:12 (68240) DEBUG ChildProcessProxy Kill 68242

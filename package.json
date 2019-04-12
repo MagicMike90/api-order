@@ -9,7 +9,8 @@
     "lint": "tslint ./src/**/*.ts ./test/**/*.spec.ts",
     "lint:fix": "tslint --fix ./src/**/*.ts ./test/**/*.spec.ts -t verbose",
     "pretest": "cross-env NODE_ENV=test npm run build && npm run lint",
-    "test": "cross-env NODE_ENV=test mocha --reporter spec --require ts-node/register test/**/*.spec.ts ",
+    "test": "cross-env NODE_ENV=test mocha --reporter spec --require ts-node/register test/**/*.spec.ts",
+    "test:watch": "cross-env NODE_ENV=test mocha --reporter spec --require ts-node/register --watch-extensions ts --watch  test/**/*.spec.ts",
     "test:mutation": "stryker run",
     "stryker:init": "stryker init",
     "dev": "cross-env PORT=3000 NODE_ENV=dev ts-node ./src/server.ts",
@@ -37,6 +38,7 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^1.2.0",
     "@types/body-parser": "^1.17.0",
     "@types/chai": "^4.1.7",
     "@types/chai-http": "^4.2.0",
