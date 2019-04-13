@@ -4,13 +4,19 @@ import * as halson from 'halson';
 import * as jwt from 'jsonwebtoken';
 
 import { UserModel } from '../schemas/User';
+import { OrderAPILogger } from '../utils/logger';
 import { formatOutput } from '../utils/orderApiUtility';
 
 export let getUser = (req: Request, res: Response, next: NextFunction) => {
   const username = req.params.username;
 
+  OrderAPILogger.logger.info(`[GET] [/users] ${username}`);
+
   UserModel.findOne({ username: username }, (err, user) => {
     if (!user) {
+      OrderAPILogger.logger.info(
+        `[GET] [/users/:{username}] user with username ${username} not found`
+      );
       return res.status(404).send();
     }
 
@@ -24,10 +30,19 @@ export let getUser = (req: Request, res: Response, next: NextFunction) => {
 
 export let addUser = (req: Request, res: Response, next: NextFunction) => {
   const newUser = new UserModel(req.body);
+
+  OrderAPILogger.logger.info(`[POST] [/users] ${newUser}`);
+
   newUser.password = bcrypt.hashSync(newUser.password, 10);
 
   newUser.save((error, user) => {
     if (error) {
+      OrderAPILogger.logger.info(
+        `[POST] [/users] something went wrong when saving a new user ${
+          newUser.username
+        } | ${error.message}`
+      );
+
       return res.status(500).send(error);
     }
     user = halson(user.toJSON()).addLink('self', `/users/${user._id}`);
@@ -37,9 +52,13 @@ export let addUser = (req: Request, res: Response, next: NextFunction) => {
 
 export let updateUser = (req: Request, res: Response, next: NextFunction) => {
   const username = req.params.username;
+  OrderAPILogger.logger.info(`[PATCH] [/users] ${username}`);
 
   UserModel.findOne({ username: username }, (err, user) => {
     if (!user) {
+      OrderAPILogger.logger.info(
+        `[PATCH] [/users/:{username}] user with username ${username} not found`
+      );
       return res.status(404).send();
     }
 
@@ -59,9 +78,13 @@ export let updateUser = (req: Request, res: Response, next: NextFunction) => {
 
 export let removeUser = (req: Request, res: Response, next: NextFunction) => {
   const username = req.params.username;
+  OrderAPILogger.logger.warn(`[DELETE] [/users] ${username}`);
 
   UserModel.findOne({ username: username }, (err, user) => {
     if (!user) {
+      OrderAPILogger.logger.info(
+        `[DELETE] [/users/:{username}] user with username ${username} not found`
+      );
       return res.status(404).send();
     }
 
@@ -77,6 +100,9 @@ export let login = (req: Request, res: Response, next: NextFunction) => {
 
   UserModel.findOne({ username: username }, (err, user) => {
     if (!user) {
+      OrderAPILogger.logger.info(
+        `[GET] [/users/login] nouser found with the username ${username}`
+      );
       return res.status(404).send();
     }
 
@@ -89,6 +115,9 @@ export let login = (req: Request, res: Response, next: NextFunction) => {
 
       return res.json({ token: token });
     } else {
+      OrderAPILogger.logger.info(
+        `[GET] [/users/login] user not authorized ${username}`
+      );
       return res.status(401).send();
     }
   });

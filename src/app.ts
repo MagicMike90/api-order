@@ -1,6 +1,8 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
+import * as expressWinston from 'express-winston';
 import * as mongoose from 'mongoose';
+import * as winston from 'winston';
 
 import { Index } from '../src/routes';
 import { OrderRoute } from '../src/routes/order';
@@ -25,6 +27,13 @@ class App {
     this.apiRoutes.routes(this.app);
     this.orderRoutes.routes(this.app);
     this.mongoSetup();
+
+    // add a default error logger on the app level.
+    this.app.use(
+      expressWinston.errorLogger({
+        transports: [new winston.transports.Console()],
+      })
+    );
 
     this.app.use(errorHandler.logging);
     this.app.use(errorHandler.clientErrorHandler);
