@@ -24,12 +24,10 @@ class App {
     this.orderRoutes.routes(this.app);
     this.mongoSetup();
   }
-
   private mongoSetup(): void {
-    mongoose.connect(
-      this.mongoUrl,
-      { useNewUrlParser: true }
-    );
+    mongoose
+      .connect(this.mongoUrl, { useNewUrlParser: true })
+      .then(() => console.log('connected to mongodDB'));
   }
 }
 
