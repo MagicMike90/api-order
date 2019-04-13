@@ -4,3 +4,4 @@
 --bail
 --timeout 35000
 test/**/*.spec.ts
+--exit

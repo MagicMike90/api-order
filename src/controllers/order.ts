@@ -10,7 +10,7 @@ export let getOrder = (req: Request, res: Response, next: NextFunction) => {
   const id = req.params.id;
   OrderModel.findById(id, (err, order) => {
     if (!order) {
-      return res.status(404).send();
+      return next(new Error(`Order ${id} not found.`));
     }
     order = halson(order.toJSON()).addLink('self', `/store/orders/${order.id}`);
     return formatOutput(res, order, 200, 'order');
@@ -40,7 +40,7 @@ export let addOrder = (req: Request, res: Response, next: NextFunction) => {
 
   UserModel.findById(userId, (err, user) => {
     if (!user) {
-      return res.status(404).send();
+      throw new Error(`There is no user with the userId ${userId}`);
     }
 
     const newOrder = new OrderModel(req.body);
