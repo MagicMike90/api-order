@@ -11,6 +11,7 @@
     "ban-types": false,
     "object-literal-sort-keys": false,
     "prefer-const": [true, { "destructuring": "all" }],
-    "semicolon": [true, "always", "ignore-bound-class-methods"]
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "no-console": [false]
   }
 }
