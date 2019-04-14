@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm install -g typescript
 RUN npm install
-RUN npm install --dev
+RUN npm install --only=dev
 
 
 EXPOSE 3000
