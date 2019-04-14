@@ -82,3 +82,95 @@
 [2019-04-13T13:46:15.751Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb1e8279a1c1d447f497875
 [2019-04-13T13:46:15.756Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb1e8279a1c1d447f497875
 [2019-04-13T13:46:15.757Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb1e8279a1c1d447f497875 not found
+[2019-04-14T00:00:03.272Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T00:00:03.277Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T00:00:03.291Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:00:03.355Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T00:00:03.361Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T00:00:03.368Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T00:00:03.372Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T00:00:03.374Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:00:03.375Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T00:00:03.382Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T00:00:03.384Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:00:03.450Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T00:00:03.450Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T00:00:03.459Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb2780312fec64ad54649c8,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:00:03.521Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb2780312fec64ad54649c8
+[2019-04-14T00:00:03.524Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb2780312fec64ad54649c9,
+  userId: 5cb2780312fec64ad54649c8,
+  quantity: 1,
+  shipDate: 2019-04-14T00:00:02.898Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T00:00:03.539Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb2780312fec64ad54649c9
+[2019-04-14T00:00:03.543Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:00:03.549Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:00:03.552Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T00:00:03.556Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2780312fec64ad54649c9
+[2019-04-14T00:00:03.561Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2780312fec64ad54649c9
+[2019-04-14T00:00:03.562Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2780312fec64ad54649c9 not found
+[2019-04-14T00:28:59.747Z] [[31merror[39m] => Error: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+[2019-04-14T00:33:31.172Z] [[31merror[39m] => Error: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+[2019-04-14T00:33:54.719Z] [[31merror[39m] => Error: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+[2019-04-14T00:34:37.293Z] [[31merror[39m] => Error: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+[2019-04-14T00:35:16.298Z] [[31merror[39m] => Error: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+[2019-04-14T00:37:28.301Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api
+[2019-04-14T00:37:57.102Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api
+[2019-04-14T00:38:15.884Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T00:38:16.058Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T00:38:16.061Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T00:38:16.074Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:38:16.140Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T00:38:16.144Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T00:38:16.151Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T00:38:16.155Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T00:38:16.156Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:38:16.158Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T00:38:16.164Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T00:38:16.166Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:38:16.238Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T00:38:16.238Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T00:38:16.248Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb280f8b8f5704fc8d44663,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:38:16.310Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb280f8b8f5704fc8d44663
+[2019-04-14T00:38:16.313Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb280f8b8f5704fc8d44664,
+  userId: 5cb280f8b8f5704fc8d44663,
+  quantity: 1,
+  shipDate: 2019-04-14T00:38:15.664Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T00:38:16.326Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb280f8b8f5704fc8d44664
+[2019-04-14T00:38:16.330Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:38:16.335Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:38:16.339Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T00:38:16.342Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb280f8b8f5704fc8d44664
+[2019-04-14T00:38:16.347Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb280f8b8f5704fc8d44664
+[2019-04-14T00:38:16.349Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb280f8b8f5704fc8d44664 not found
