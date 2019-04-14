@@ -11,7 +11,7 @@
     "pretest": "cross-env NODE_ENV=test npm run build && npm run lint",
     "test": "cross-env NODE_ENV=test mocha --reporter spec",
     "test:watch": "cross-env NODE_ENV=test mocha --reporter spec --require ts-node/register --watch-extensions ts --watch  test/**/*.spec.ts",
-    "test:mutation": "stryker run",
+    "test:mutation": "cross-env NODE_ENV=test stryker run",
     "stryker:init": "stryker init",
     "dev": "cross-env PORT=3000 NODE_ENV=dev ts-node ./src/server.ts",
     "dev:watch": "nodemon",

@@ -28,11 +28,11 @@ describe('userRoute', async () => {
   before(done => {
     expect(UserModel.modelName).to.be.equal('User');
 
-    UserModel.db.dropCollection('users', async err => {
+    return UserModel.db.dropCollection('users', err => {
       const newUser = new UserModel(user);
       newUser.password = bcrypt.hashSync(newUser.password, 10);
 
-      newUser.save(async (error, userCreated) => {
+      newUser.save((error, userCreated) => {
         user._id = userCreated._id;
         done();
       });

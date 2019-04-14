@@ -174,3 +174,178 @@
 [2019-04-14T00:38:16.342Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb280f8b8f5704fc8d44664
 [2019-04-14T00:38:16.347Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb280f8b8f5704fc8d44664
 [2019-04-14T00:38:16.349Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb280f8b8f5704fc8d44664 not found
+[2019-04-14T00:43:37.674Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T00:43:37.851Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T00:43:37.853Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T00:43:37.866Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:43:37.930Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T00:43:37.934Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T00:43:37.941Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T00:43:37.945Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T00:43:37.946Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:43:37.948Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T00:43:37.953Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T00:43:37.955Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:43:38.021Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T00:43:38.022Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T00:43:38.031Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb2823af8fd78508bbe4dd1,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:43:38.094Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb2823af8fd78508bbe4dd1
+[2019-04-14T00:43:38.096Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb2823af8fd78508bbe4dd2,
+  userId: 5cb2823af8fd78508bbe4dd1,
+  quantity: 1,
+  shipDate: 2019-04-14T00:43:37.459Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T00:43:38.111Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb2823af8fd78508bbe4dd2
+[2019-04-14T00:43:38.115Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:43:38.120Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:43:38.124Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T00:43:38.128Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2823af8fd78508bbe4dd2
+[2019-04-14T00:43:38.133Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2823af8fd78508bbe4dd2
+[2019-04-14T00:43:38.135Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2823af8fd78508bbe4dd2 not found
+[2019-04-14T00:48:35.629Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T00:48:35.808Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T00:48:35.811Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T00:48:35.824Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:48:35.888Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T00:48:35.893Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T00:48:35.901Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T00:48:35.906Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T00:48:35.907Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:48:35.909Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T00:48:35.916Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T00:48:35.918Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T00:48:35.986Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T00:48:35.987Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T00:48:35.996Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb2836390f86451074b9de9,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T00:48:36.058Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb2836390f86451074b9de9
+[2019-04-14T00:48:36.061Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb2836490f86451074b9dea,
+  userId: 5cb2836390f86451074b9de9,
+  quantity: 1,
+  shipDate: 2019-04-14T00:48:35.403Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T00:48:36.075Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb2836490f86451074b9dea
+[2019-04-14T00:48:36.079Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:48:36.084Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T00:48:36.088Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T00:48:36.092Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2836490f86451074b9dea
+[2019-04-14T00:48:36.097Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2836490f86451074b9dea
+[2019-04-14T00:48:36.099Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2836490f86451074b9dea not found
+[2019-04-14T01:13:42.437Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T01:14:56.331Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T01:15:39.410Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T01:16:47.134Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T01:16:47.318Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T01:16:47.320Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T01:16:47.335Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T01:16:47.405Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T01:16:47.412Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T01:16:47.423Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T01:16:47.427Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T01:16:47.429Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T01:16:47.431Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T01:16:47.439Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T01:16:47.442Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T01:16:47.518Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T01:16:47.518Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T01:16:47.528Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb289ff4477e253b6f513a4,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T01:16:47.591Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb289ff4477e253b6f513a4
+[2019-04-14T01:16:47.595Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb289ff4477e253b6f513a5,
+  userId: 5cb289ff4477e253b6f513a4,
+  quantity: 1,
+  shipDate: 2019-04-14T01:16:46.888Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T01:16:47.609Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb289ff4477e253b6f513a5
+[2019-04-14T01:16:47.613Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T01:16:47.618Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T01:16:47.622Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T01:16:47.626Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb289ff4477e253b6f513a5
+[2019-04-14T01:16:47.631Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb289ff4477e253b6f513a5
+[2019-04-14T01:16:47.633Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb289ff4477e253b6f513a5 not found
+[2019-04-14T01:17:04.999Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T01:17:05.160Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T01:17:05.163Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T01:17:05.178Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T01:17:05.248Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T01:17:05.253Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T01:17:05.262Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T01:17:05.266Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T01:17:05.268Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T01:17:05.270Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T01:17:05.277Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T01:17:05.279Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T01:17:05.359Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T01:17:05.360Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T01:17:05.370Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb28a1151a3ff53ed29240c,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T01:17:05.437Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb28a1151a3ff53ed29240c
+[2019-04-14T01:17:05.442Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb28a1151a3ff53ed29240d,
+  userId: 5cb28a1151a3ff53ed29240c,
+  quantity: 1,
+  shipDate: 2019-04-14T01:17:04.775Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T01:17:05.462Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb28a1151a3ff53ed29240d
+[2019-04-14T01:17:05.466Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T01:17:05.472Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T01:17:05.478Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T01:17:05.484Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb28a1151a3ff53ed29240d
+[2019-04-14T01:17:05.492Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb28a1151a3ff53ed29240d
+[2019-04-14T01:17:05.494Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb28a1151a3ff53ed29240d not found

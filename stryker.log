@@ -5610,3 +5610,237 @@ OverwriteModelError: Cannot overwrite `Order` model once compiled.
 23:05:22 (73322) INFO HtmlReporter Your report can be found at: file:///Users/cluo/Development/api-order/reports/mutation/html/index.html
 23:05:22 (73322) DEBUG TempFolder Deleting stryker temp folder /Users/cluo/Development/api-order/.stryker-tmp
 23:05:22 (73322) INFO Stryker Done in 40 seconds.
+11:18:07 (87082) INFO ConfigReader Using stryker.conf.js in the current working directory.
+11:18:08 (87082) DEBUG BroadcastReporter Broadcasting to reporters ["html","progress","dashboard"]
+11:18:07 (87082) DEBUG ConfigReader Loading config stryker.conf.js
+11:18:07 (87082) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-html-reporter
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+11:18:07 (87082) DEBUG PluginLoader Loading plugins stryker-typescript
+11:18:07 (87082) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+11:18:07 (87082) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+11:18:07 (87082) INFO MochaOptionsLoader Loading mochaOpts from "/Users/cluo/Development/api-order/test/mocha.opts"
+11:18:07 (87082) DEBUG MochaOptionsLoader Ignoring option "--full-trace" as it is not supported.
+11:18:07 (87082) DEBUG MochaOptionsLoader Ignoring option "--bail" as it is not supported.
+11:18:07 (87082) DEBUG MochaOptionsLoader Ignoring option "test/**/*.spec.ts" as it is not supported.
+11:18:07 (87082) DEBUG MochaOptionsLoader Ignoring option "--exit" as it is not supported.
+11:18:07 (87082) INFO TypescriptConfigEditor Loading tsconfig file /Users/cluo/Development/api-order/tsconfig.json
+11:18:08 (87082) INFO InputFileResolver Found 19 of 42 file(s) to be mutated.
+11:18:08 (87082) DEBUG InputFileResolver All input files: [
+  "/Users/cluo/Development/api-order/.env.dev",
+  "/Users/cluo/Development/api-order/.env.test",
+  "/Users/cluo/Development/api-order/.gitignore",
+  "/Users/cluo/Development/api-order/.prettierrc",
+  "/Users/cluo/Development/api-order/.travis.yml",
+  "/Users/cluo/Development/api-order/README.md",
+  "/Users/cluo/Development/api-order/aggregated.log",
+  "/Users/cluo/Development/api-order/config/cert.pem",
+  "/Users/cluo/Development/api-order/config/gen-cert.sh",
+  "/Users/cluo/Development/api-order/config/key.pem",
+  "/Users/cluo/Development/api-order/config/keytemp.pem",
+  "/Users/cluo/Development/api-order/nodemon.json",
+  "/Users/cluo/Development/api-order/package.json",
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/applicationType.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/schemas/order.ts",
+  "/Users/cluo/Development/api-order/src/schemas/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/src/utils/errorHandler.ts",
+  "/Users/cluo/Development/api-order/src/utils/logger.ts",
+  "/Users/cluo/Development/api-order/src/utils/orderApiUtility.ts",
+  "/Users/cluo/Development/api-order/src/utils/passportConfiguration.ts",
+  "/Users/cluo/Development/api-order/stryker.conf.js",
+  "/Users/cluo/Development/api-order/stryker.log",
+  "/Users/cluo/Development/api-order/test/mocha.opts",
+  "/Users/cluo/Development/api-order/test/routes/01_api.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/02_user.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/03_order.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/tsconfig.json",
+  "/Users/cluo/Development/api-order/tslint.json",
+  "/Users/cluo/Development/api-order/yarn.lock"
+]
+11:18:08 (87082) DEBUG InputFileResolver Files to mutate: [
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/applicationType.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/schemas/order.ts",
+  "/Users/cluo/Development/api-order/src/schemas/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/src/utils/errorHandler.ts",
+  "/Users/cluo/Development/api-order/src/utils/logger.ts",
+  "/Users/cluo/Development/api-order/src/utils/orderApiUtility.ts",
+  "/Users/cluo/Development/api-order/src/utils/passportConfiguration.ts"
+]
+11:18:08 (87082) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+11:18:08 (87082) INFO InitialTestExecutor Starting initial test run. This may take a while.
+11:18:08 (87082) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383
+11:18:08 (87082) DEBUG Sandbox Creating test runner 0
+11:18:08 (87082) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 87084
+11:18:08 (87084) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383
+11:18:08 (87084) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-html-reporter
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+11:18:08 (87084) DEBUG PluginLoader Loading plugins stryker-typescript
+11:18:08 (87084) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+11:18:08 (87084) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+11:18:08 (87084) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383/test/routes/01_api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383/test/routes/02_user.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383/test/routes/03_order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383/test/routes/index.spec.ts"
+]
+11:18:08 (87082) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+11:18:11 (87084) DEBUG MochaTestRunner Starting Mocha test run
+11:18:11 (87082) TRACE ChildProcessProxy [2019-04-14T01:18:11.481Z] [[31merror[39m] => Failed to connect to mongodb://undefined/undefined: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+
+11:18:46 (87084) TRACE MochaTestRunner Test failed: userRoute "before all" hook for "should be able to login". Error: Timeout of 35000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/cluo/Development/api-order/.stryker-tmp/sandbox3507383/test/routes/02_user.spec.ts)
+11:18:46 (87084) DEBUG MochaTestRunner Mocha test run completed: 0/1 passed
+11:18:46 (87082) DEBUG ChildProcessProxy Disposing of worker process 87084
+11:18:46 (87082) DEBUG ChildProcessProxy Kill 87084
+11:23:23 (87182) INFO ConfigReader Using stryker.conf.js in the current working directory.
+11:23:24 (87182) DEBUG BroadcastReporter Broadcasting to reporters ["html","progress","dashboard"]
+11:23:23 (87182) DEBUG ConfigReader Loading config stryker.conf.js
+11:23:23 (87182) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-html-reporter
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+11:23:23 (87182) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+11:23:24 (87182) DEBUG PluginLoader Loading plugins stryker-typescript
+11:23:24 (87182) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+11:23:24 (87182) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+11:23:24 (87182) INFO MochaOptionsLoader Loading mochaOpts from "/Users/cluo/Development/api-order/test/mocha.opts"
+11:23:24 (87182) DEBUG MochaOptionsLoader Ignoring option "--full-trace" as it is not supported.
+11:23:24 (87182) DEBUG MochaOptionsLoader Ignoring option "--bail" as it is not supported.
+11:23:24 (87182) DEBUG MochaOptionsLoader Ignoring option "test/**/*.spec.ts" as it is not supported.
+11:23:24 (87182) DEBUG MochaOptionsLoader Ignoring option "--exit" as it is not supported.
+11:23:24 (87182) INFO TypescriptConfigEditor Loading tsconfig file /Users/cluo/Development/api-order/tsconfig.json
+11:23:24 (87182) INFO InputFileResolver Found 19 of 42 file(s) to be mutated.
+11:23:24 (87182) DEBUG InputFileResolver All input files: [
+  "/Users/cluo/Development/api-order/.env.dev",
+  "/Users/cluo/Development/api-order/.env.test",
+  "/Users/cluo/Development/api-order/.gitignore",
+  "/Users/cluo/Development/api-order/.prettierrc",
+  "/Users/cluo/Development/api-order/.travis.yml",
+  "/Users/cluo/Development/api-order/README.md",
+  "/Users/cluo/Development/api-order/aggregated.log",
+  "/Users/cluo/Development/api-order/config/cert.pem",
+  "/Users/cluo/Development/api-order/config/gen-cert.sh",
+  "/Users/cluo/Development/api-order/config/key.pem",
+  "/Users/cluo/Development/api-order/config/keytemp.pem",
+  "/Users/cluo/Development/api-order/nodemon.json",
+  "/Users/cluo/Development/api-order/package.json",
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/applicationType.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/schemas/order.ts",
+  "/Users/cluo/Development/api-order/src/schemas/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/src/utils/errorHandler.ts",
+  "/Users/cluo/Development/api-order/src/utils/logger.ts",
+  "/Users/cluo/Development/api-order/src/utils/orderApiUtility.ts",
+  "/Users/cluo/Development/api-order/src/utils/passportConfiguration.ts",
+  "/Users/cluo/Development/api-order/stryker.conf.js",
+  "/Users/cluo/Development/api-order/stryker.log",
+  "/Users/cluo/Development/api-order/test/mocha.opts",
+  "/Users/cluo/Development/api-order/test/routes/01_api.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/02_user.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/03_order.spec.ts",
+  "/Users/cluo/Development/api-order/test/routes/index.spec.ts",
+  "/Users/cluo/Development/api-order/tsconfig.json",
+  "/Users/cluo/Development/api-order/tslint.json",
+  "/Users/cluo/Development/api-order/yarn.lock"
+]
+11:23:24 (87182) DEBUG InputFileResolver Files to mutate: [
+  "/Users/cluo/Development/api-order/src/app.ts",
+  "/Users/cluo/Development/api-order/src/controllers/api.ts",
+  "/Users/cluo/Development/api-order/src/controllers/order.ts",
+  "/Users/cluo/Development/api-order/src/controllers/user.ts",
+  "/Users/cluo/Development/api-order/src/models/applicationType.ts",
+  "/Users/cluo/Development/api-order/src/models/order.ts",
+  "/Users/cluo/Development/api-order/src/models/orderStatus.ts",
+  "/Users/cluo/Development/api-order/src/models/user.ts",
+  "/Users/cluo/Development/api-order/src/routes/api.ts",
+  "/Users/cluo/Development/api-order/src/routes/index.ts",
+  "/Users/cluo/Development/api-order/src/routes/order.ts",
+  "/Users/cluo/Development/api-order/src/routes/user.ts",
+  "/Users/cluo/Development/api-order/src/schemas/order.ts",
+  "/Users/cluo/Development/api-order/src/schemas/user.ts",
+  "/Users/cluo/Development/api-order/src/server.ts",
+  "/Users/cluo/Development/api-order/src/utils/errorHandler.ts",
+  "/Users/cluo/Development/api-order/src/utils/logger.ts",
+  "/Users/cluo/Development/api-order/src/utils/orderApiUtility.ts",
+  "/Users/cluo/Development/api-order/src/utils/passportConfiguration.ts"
+]
+11:23:24 (87182) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+11:23:24 (87182) INFO InitialTestExecutor Starting initial test run. This may take a while.
+11:23:24 (87182) DEBUG Sandbox Creating a sandbox for files in /Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623
+11:23:24 (87182) DEBUG Sandbox Creating test runner 0
+11:23:24 (87182) DEBUG ChildProcessProxy Starting /Users/cluo/Development/api-order/node_modules/stryker/src/test-runner/ChildProcessTestRunnerWorker.js in child process 87184
+11:23:24 (87184) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623
+11:23:24 (87184) DEBUG PluginLoader Loading stryker-* from /Users/cluo/Development/api-order/node_modules
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-html-reporter (matched with expression stryker-*)
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-mocha-framework (matched with expression stryker-*)
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-mocha-runner (matched with expression stryker-*)
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-typescript (matched with expression stryker-*)
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-html-reporter
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-mocha-framework
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-mocha-runner
+11:23:24 (87184) DEBUG PluginLoader Loading plugins stryker-typescript
+11:23:24 (87184) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/reporters/index.js
+11:23:24 (87184) DEBUG PluginLoader Loading plugins /Users/cluo/Development/api-order/node_modules/stryker/src/mutators/index.js
+11:23:25 (87184) DEBUG MochaTestRunner Using files: [
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623/test/routes/01_api.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623/test/routes/02_user.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623/test/routes/03_order.spec.ts",
+  "/Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623/test/routes/index.spec.ts"
+]
+11:23:25 (87182) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+11:23:28 (87184) DEBUG MochaTestRunner Starting Mocha test run
+11:23:28 (87182) TRACE ChildProcessProxy [2019-04-14T01:23:28.141Z] [[31merror[39m] => Failed to connect to mongodb://undefined/undefined: Error: getaddrinfo ENOTFOUND undefined undefined:27017
+
+11:24:03 (87184) TRACE MochaTestRunner Test failed: userRoute "before all" hook for "should be able to login". Error: Timeout of 35000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/cluo/Development/api-order/.stryker-tmp/sandbox9603623/test/routes/02_user.spec.ts)
+11:24:03 (87184) DEBUG MochaTestRunner Mocha test run completed: 0/1 passed
+11:24:03 (87182) DEBUG ChildProcessProxy Disposing of worker process 87184
+11:24:03 (87182) DEBUG ChildProcessProxy Kill 87184
