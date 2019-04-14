@@ -2,6 +2,7 @@ import * as bodyParser from 'body-parser';
 import * as dotenv from 'dotenv';
 import * as express from 'express';
 import * as expressWinston from 'express-winston';
+import * as methodOverride from 'method-override';
 import * as mongoose from 'mongoose';
 import * as winston from 'winston';
 
@@ -33,7 +34,13 @@ class App {
     this.mongoPass = `${process.env.MONGODB_PASS}`;
 
     this.app = express();
+    this.app.use(
+      bodyParser.urlencoded({
+        extended: true,
+      })
+    );
     this.app.use(bodyParser.json());
+    this.app.use(methodOverride());
 
     this.indexRoutes.routes(this.app);
     this.userRoutes.routes(this.app);
@@ -51,7 +58,9 @@ class App {
     this.app.use(errorHandler.logging);
     this.app.use(errorHandler.clientErrorHandler);
     this.app.use(errorHandler.errorHandler);
+    // this.app.use(errorHandler.notFound);
   }
+
   private mongoSetup(): void {
     let options: mongoose.ConnectionOptions;
 

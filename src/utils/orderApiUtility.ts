@@ -15,6 +15,7 @@ export let formatOutput = (
       res.status(statusCode).send(data);
     },
     xml: () => {
+      console.log('formatOutput rootElement', rootElement);
       res.type(ApplicationType.XML);
       res.status(200).send(js2xmlparser.parse(rootElement, data));
     },

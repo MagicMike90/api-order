@@ -1,12 +1,14 @@
 import { NextFunction, Request, Response } from 'express';
 
+import { OrderAPILogger } from './logger';
+
 export let logging = (
   err: Error,
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  // console.log(err);
+  OrderAPILogger.logger.error(err);
   next(err);
 };
 
@@ -30,4 +32,8 @@ export let errorHandler = (
   next: NextFunction
 ) => {
   res.status(404).send({ error: err.message });
+};
+
+export let notFound = (req: Request, res: Response, next: NextFunction) => {
+  res.status(404).send({ error: 'not found' });
 };
