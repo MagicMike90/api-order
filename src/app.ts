@@ -58,7 +58,7 @@ class App {
     this.app.use(errorHandler.logging);
     this.app.use(errorHandler.clientErrorHandler);
     this.app.use(errorHandler.errorHandler);
-    // this.app.use(errorHandler.notFound);
+    this.app.use(errorHandler.notFound);
   }
 
   private mongoSetup(): void {

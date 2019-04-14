@@ -777,3 +777,4 @@
 [2019-04-14T08:49:36.709Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2f420082746229e94999c
 [2019-04-14T08:49:36.715Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2f420082746229e94999c
 [2019-04-14T08:49:36.717Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2f420082746229e94999c not found
+[2019-04-14T08:52:22.118Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api

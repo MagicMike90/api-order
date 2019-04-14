@@ -12,3 +12,4 @@ keys.json
 gce.json
 *.env
 *.prod
+*.log
