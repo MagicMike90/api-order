@@ -2,7 +2,10 @@ import { Document, Model, model, Schema } from 'mongoose';
 
 import User from '../models/user';
 
-export interface UserModel extends User, Document {}
+export interface UserModel extends User, Document {
+  createdAt: Date;
+  modifiedAt: Date;
+}
 
 export const UserSchema: Schema = new Schema({
   firstName: String,
@@ -13,5 +16,9 @@ export const UserSchema: Schema = new Schema({
   userStatus: Number,
   username: String,
 });
+
+UserSchema.methods.fullName = function(): string {
+  return this.firstName.trim() + ' ' + this.lastName.trim();
+};
 
 export const UserModel: Model<UserModel> = model<UserModel>('User', UserSchema);

@@ -395,3 +395,65 @@
 [2019-04-14T05:02:30.712Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2bee6bb2a330e5e36b8fa
 [2019-04-14T05:02:30.714Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2bee6bb2a330e5e36b8fa not found
 [2019-04-14T05:02:40.678Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api
+[2019-04-14T05:32:21.020Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T05:32:21.203Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T05:32:21.206Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T05:32:21.219Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T05:32:21.282Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T05:32:21.286Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T05:32:21.293Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T05:32:21.296Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T05:32:21.298Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T05:32:21.299Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T05:32:21.305Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T05:32:21.307Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T05:33:53.886Z] [[32minfo[39m] => Connected to MongoDB mongodb://localhost:27017/order-api-test
+[2019-04-14T05:33:54.066Z] [[32minfo[39m] => [GET] [/users] NO_USER
+[2019-04-14T05:33:54.069Z] [[32minfo[39m] => [GET] [/users/:{username}] user with username NO_USER not found
+[2019-04-14T05:33:54.082Z] [[32minfo[39m] => [POST] [/users] { _id: null,
+  username: 'John',
+  firstName: 'John',
+  lastName: 'Doe',
+  email: 'unique_email@email.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T05:33:54.147Z] [[32minfo[39m] => [GET] [/users] John
+[2019-04-14T05:33:54.152Z] [[32minfo[39m] => [PATCH] [/users] John
+[2019-04-14T05:33:54.160Z] [[32minfo[39m] => [GET] [/users] John_Updated
+[2019-04-14T05:33:54.164Z] [[32minfo[39m] => [PATCH] [/users] Mary
+[2019-04-14T05:33:54.166Z] [[32minfo[39m] => [PATCH] [/users/:{username}] user with username Mary not found
+[2019-04-14T05:33:54.169Z] [[33mwarn[39m] => [DELETE] [/users] John_Updated
+[2019-04-14T05:33:54.175Z] [[33mwarn[39m] => [DELETE] [/users] Mary
+[2019-04-14T05:33:54.178Z] [[32minfo[39m] => [DELETE] [/users/:{username}] user with username Mary not found
+[2019-04-14T05:33:54.248Z] [[32minfo[39m] => [GET] [/store/orders/] 000
+[2019-04-14T05:33:54.249Z] [[32minfo[39m] => [GET] [/store/orders/:{orderId}] Order 000 not found.
+[2019-04-14T05:33:54.269Z] [[32minfo[39m] => [POST] [/users] { _id: 5cb2c6428a7a07119bd50bf5,
+  username: 'OrderUser',
+  firstName: 'Order',
+  lastName: 'User',
+  email: 'order@myemail.com',
+  password: 'password',
+  phone: '5555555',
+  userStatus: 1 }
+[2019-04-14T05:33:54.333Z] [[32minfo[39m] => [POST] [/store/orders/] 5cb2c6428a7a07119bd50bf5
+[2019-04-14T05:33:54.336Z] [[32minfo[39m] => [POST] [/store/orders/] { _id: 5cb2c6428a7a07119bd50bf6,
+  userId: 5cb2c6428a7a07119bd50bf5,
+  quantity: 1,
+  shipDate: 2019-04-14T05:33:53.658Z,
+  status: 'PLACED',
+  complete: false }
+[2019-04-14T05:33:54.353Z] [[32minfo[39m] => [GET] [/store/orders/] 5cb2c6428a7a07119bd50bf6
+[2019-04-14T05:33:54.357Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T05:33:54.362Z] [[32minfo[39m] => [GET] [/store/orders/]
+[2019-04-14T05:33:54.366Z] [[32minfo[39m] => [GET] [/store/inventory/] PLACED
+[2019-04-14T05:33:54.370Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2c6428a7a07119bd50bf6
+[2019-04-14T05:33:54.375Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb2c6428a7a07119bd50bf6
+[2019-04-14T05:33:54.376Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb2c6428a7a07119bd50bf6 not found

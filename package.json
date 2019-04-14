@@ -16,7 +16,7 @@
     "dev": "cross-env PORT=3000 NODE_ENV=dev ts-node ./src/server.ts",
     "dev:watch": "nodemon",
     "prod": "PORT=3000 npm run build && npm run start",
-    "tsc": "tsc --forceConsistentCasingInFileNames"
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",

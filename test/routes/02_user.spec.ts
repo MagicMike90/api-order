@@ -28,7 +28,7 @@ describe('userRoute', async () => {
   before(done => {
     expect(UserModel.modelName).to.be.equal('User');
 
-    return UserModel.db.dropCollection('users', err => {
+    UserModel.db.dropCollection('users', err => {
       const newUser = new UserModel(user);
       newUser.password = bcrypt.hashSync(newUser.password, 10);
 

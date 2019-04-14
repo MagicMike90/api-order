@@ -1,8 +1,8 @@
-'use strict';
 import 'mocha';
 
 import * as chai from 'chai';
 import chaiHttp = require('chai-http');
+import * as mongoose from 'mongoose';
 
 import app from '../../src/app';
 import { OrderModel } from '../../src/schemas/order';
@@ -26,6 +26,9 @@ describe('orderRoute', () => {
   before(async () => {
     expect(OrderModel.modelName).to.be.equal('Order');
     OrderModel.collection.drop();
+  });
+  after(async () => {
+    mongoose.connection.close();
   });
 
   it('should be able to login and get the token to be used on orders requests', async () => {
