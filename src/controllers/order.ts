@@ -3,7 +3,7 @@ import * as halson from 'halson';
 import * as _ from 'lodash';
 
 import { OrderModel } from '../schemas/order';
-import { UserModel } from '../schemas/User';
+import { UserModel } from '../schemas/user';
 import { OrderAPILogger } from '../utils/logger';
 import { formatOutput } from '../utils/orderApiUtility';
 

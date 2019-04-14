@@ -349,3 +349,4 @@
 [2019-04-14T01:17:05.484Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb28a1151a3ff53ed29240d
 [2019-04-14T01:17:05.492Z] [[33mwarn[39m] => [DELETE] [/store/orders/] 5cb28a1151a3ff53ed29240d
 [2019-04-14T01:17:05.494Z] [[33mwarn[39m] => [DELETE] [/store/orders/:{orderId}] Order id 5cb28a1151a3ff53ed29240d not found
+[2019-04-14T01:42:57.427Z] [[31merror[39m] => Failed to connect to mongodb://localhost:27017/order-api-test: Error: connect ECONNREFUSED 127.0.0.1:27017
