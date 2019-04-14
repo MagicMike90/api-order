@@ -16,6 +16,7 @@
     "dev": "cross-env PORT=3000 NODE_ENV=dev ts-node ./src/server.ts",
     "dev:watch": "nodemon",
     "prod": "PORT=3000 npm run build && npm run start",
+    "prestart": "node dist/src/utils/config.js",
     "start": "NODE_ENV=prod node dist/src/server.js",
     "tsc": "tsc"
   },
@@ -34,6 +35,7 @@
   },
   "homepage": "https://github.com/MagicMike90/api-order#readme",
   "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
     "bcrypt": "^3.0.5",
     "body-parser": "^1.18.3",
     "chai-http": "^4.2.1",
