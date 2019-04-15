@@ -17,4 +17,4 @@ const downloadFile = (
     .download(options);
 };
 
-downloadFile('envvars_order-api', '.env.prod', '.env.prod');
+downloadFile('asia.artifacts.order-api-237605.appspot.com', '.env.prod', '.env.prod');
